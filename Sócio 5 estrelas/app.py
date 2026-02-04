@@ -46,10 +46,6 @@ def carregar_imagem(nome_base):
 with st.sidebar:
     st.image("https://upload.wikimedia.org/wikipedia/commons/b/bc/Cruzeiro_Esporte_Clube_logo.svg", width=80)
     st.title("Painel do Sócio")
-    st.subheader("🗓️ Próximo Jogo")
-    data_jogo = datetime(2026, 2, 8, 16, 0)
-    dias_restantes = (data_jogo - datetime.now()).days
-    st.metric(label="Dias para o Clássico", value=f"{max(0, dias_restantes)}")
 
 st.markdown("<h1 style='text-align:center;'>Sócio 5 estrelas by Carol Bastos</h1>", unsafe_allow_html=True)
 
@@ -151,6 +147,7 @@ elif st.session_state.efeito == "gol":
 
 st.markdown("---")
 st.write("© 2026 - Desenvolvido com 💙 por Carol Bastos")
+
 
 
 
