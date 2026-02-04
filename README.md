@@ -1,2 +1,2 @@
-# Sócio-5-Estrelas
+# socio-5-estrelas
 página de sócio torcedor
