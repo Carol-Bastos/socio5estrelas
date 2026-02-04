@@ -34,11 +34,14 @@ h1, h2, h3, p, span, label { color: white !important; }
 """, unsafe_allow_html=True)
 
 def carregar_imagem(nome_base):
+    if os.path.exists(nome_base):
+        return nome_base
     for ext in [".jpg", ".jpeg", ".png", ".JPG", ".JPEG", ".PNG"]:
         caminho = f"{nome_base}{ext}"
         if os.path.exists(caminho):
             return caminho
     return None
+
 
 with st.sidebar:
     st.image("https://upload.wikimedia.org/wikipedia/commons/b/bc/Cruzeiro_Esporte_Clube_logo.svg", width=80)
@@ -182,5 +185,6 @@ with col_dir:
 
 st.markdown("---")
 st.write("© 2026 - Desenvolvido com 💙 por Carol Bastos")
+
 
 
