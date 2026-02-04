@@ -79,7 +79,7 @@ with col1:
 
 with col2:
     st.subheader("Cruzeiro Sempre")
-    img = carregar_imagem("comemoracao")
+    img = carregar_imagem("mp10")
     if img: st.image(img, use_container_width=True)
     st.write("💰 R$ 62,00/mês")
     if st.button("Assinar Cruzeiro Sempre", key="sempre", use_container_width=True):
@@ -158,7 +158,7 @@ A equipe, comandada por Vanderlei Luxemburgo, tinha jogadores como Alex, Deivid 
 - Primeiro clube brasileiro a conquistar Estadual + Copa do Brasil + Brasileirão no mesmo ano
 """)
 
-img = carregar_imagem("fotodatacatrofeu")
+img = carregar_imagem("fototrofeu")
 if img:
     st.image(img, width=500)
 
@@ -182,4 +182,5 @@ with col_dir:
 
 st.markdown("---")
 st.write("© 2026 - Desenvolvido com 💙 por Carol Bastos")
+
 
